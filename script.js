@@ -34,7 +34,7 @@ function validateBill(){
 calc.addEventListener("click",calculate);
 customTip.addEventListener("input",tipCustomVal);
 people.addEventListener("input",setPeopleVal);
-reset.addEventListener("input",handleReset);
+reset.addEventListener("click",handleReset);
 
 
 button.forEach(function(btn){
