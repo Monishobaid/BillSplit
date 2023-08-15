@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bill Split</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Changa:wght@200;300;400;500;600&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>BILL SPLIT</h1>
+        </div>
+        <div class="main">
+            <div class="topsection">
+                <div class="label-0">
+                    <label for="input">Bill Amount</label>
+                </div>
+                <div class="input-container">
+                    <input type="number" placeholder="0.0" id="input">
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                </div>
+                <div class="label-1">
+                    <label for="customTip">Select Tip %</label>
+                </div>
+                <div class="btns-container">
+                    <button class="btn">5%</button>
+                    <button class="btn">10%</button>
+                    <button class="btn">20%</button>
+                    <button class="btn">25%</button>
+                    <button class="btn">30%</button>
+                    <input type="number" placeholder="Custom Value" id="customTip">
+                </div>
+                <div class="label-2">
+                    <label for="people">Number of People</label>
+                    <p id="error"></p>
+                </div>
+                <div class="peoplewrapper">
+                    <input type="number" placeholder="1" id="people">
+                    <i class="fa-solid fa-user"></i>
+                    <button id="calc" class="incrementBtn">Generate Bill</button>
+                </div>
+            </div>
+            <div class="bottomsection">
+                <div class="amount">
+                    <div class="desc">
+                        <p>Tip Amount<br><span>/person</span></p>
+                        <div class="tipvalue">₹ 0</div>
+                    </div>
+                    <div class="desc">
+                        <p>Total Amount<br><span>/person</span></p>
+                        <div class="tipvalue">₹ 0</div>
+                    </div>
+                </div>
+                <button class="reset">Reset</button>
+
+            </div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
