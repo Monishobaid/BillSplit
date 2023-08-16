@@ -96,4 +96,6 @@ function handleReset(){
 
     reset.classList.remove("active")
     validateInput()
+    totalVal[0].innerHTML="₹ 0.0";
+    totalVal[1].innerHTML="₹ 0.0";
 }
